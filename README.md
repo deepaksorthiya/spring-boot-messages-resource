@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/docker/pulls/deepaksorthiya/spring-boot-messages-resource" alt="Docker"/>
   </a>
   <a href="https://spring.io/projects/spring-boot">
-    <img src="https://img.shields.io/badge/spring--boot-3.5.0-brightgreen?logo=springboot" alt="Spring Boot"/>
+    <img src="https://img.shields.io/badge/spring--boot-3.5.6-brightgreen?logo=springboot" alt="Spring Boot"/>
   </a>
 </p>
 
@@ -47,7 +47,7 @@ support.
 
 ## 🚀 Features
 
-- Spring Boot 3.5.0 (Java 24)
+- Spring Boot 3.5.6 (Java 25)
 - RESTful API with CRUD endpoints
 - Spring Data JPA (H2 in-memory DB)
 - Actuator endpoints enabled
@@ -60,11 +60,11 @@ support.
 
 ## 📦 Requirements
 
-- Git `2.50.0+`
-- Java `24`
+- Git `2.51+`
+- Java `25`
 - Maven `3.9+`
-- Spring Boot `3.5.0`
-- (Optional)Docker Desktop (tested on `4.42.0`)
+- Spring Boot `3.5.6`
+- (Optional)Docker Desktop (tested on `4.48.0`)
 - (Optional) Minikube/Helm for Kubernetes
 
 ---
