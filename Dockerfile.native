@@ -1,10 +1,17 @@
-####
-# This Dockerfile is used in order to build a container that runs the spring application in native (no JVM) mode.
-# microdnf package manager installed
-# Check https://github.com/oracle/container-images for further information about this image.
-FROM oraclelinux:10-slim
-WORKDIR /app
-COPY target/spring-boot-messages-resource ./
-EXPOSE 8080
-RUN ls -a
+# Using Oracle GraalVM for JDK 25
+FROM container-registry.oracle.com/graalvm/native-image:25 AS builder
+# Set the working directory to /home/app
+WORKDIR /ws-builder
+# Copy the source code into the image for building
+ADD . .
+# Build
+RUN chmod +x mvnw && ./mvnw --no-transfer-progress native:compile -Pnative -DskipTests
+# The deployment Image
+FROM quay.io/quarkus/ubi9-quarkus-micro-image:2.0
+WORKDIR /application
+# Copy the native executable into the containers
+COPY --from=builder /ws-builder/target/spring-boot-messages-resource ./
+# entrypoint to start application
 ENTRYPOINT ["./spring-boot-messages-resource"]
+# EXPOSE PORT
+EXPOSE 8080

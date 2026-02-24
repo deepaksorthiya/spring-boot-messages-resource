@@ -2,13 +2,13 @@
 
 <p style="text-align: center;">
   <a href="https://github.com/deepaksorthiya/spring-boot-messages-resource/workflows/maven-build.yml">
-    <img src="https://github.com/deepaksorthiya/spring-boot-messages-resource/actions/workflows/maven-build.yml/badge.svg" alt="Java Maven Build Test"/>
+    <img src="https://github.com/deepaksorthiya/spring-boot-messages-resource/actions/workflows/maven-jvm-non-native-build.yml/badge.svg" alt="Java Maven Build Test"/>
   </a>
   <a href="https://hub.docker.com/r/deepaksorthiya/spring-boot-messages-resource">
     <img src="https://img.shields.io/docker/pulls/deepaksorthiya/spring-boot-messages-resource" alt="Docker"/>
   </a>
   <a href="https://spring.io/projects/spring-boot">
-    <img src="https://img.shields.io/badge/spring--boot-3.5.6-brightgreen?logo=springboot" alt="Spring Boot"/>
+    <img src="https://img.shields.io/badge/spring--boot-3.5.11-brightgreen?logo=springboot" alt="Spring Boot"/>
   </a>
 </p>
 
@@ -47,7 +47,6 @@ support.
 
 ## 🚀 Features
 
-- Spring Boot 3.5.6 (Java 25)
 - RESTful API with CRUD endpoints
 - Spring Data JPA (H2 in-memory DB)
 - Actuator endpoints enabled
@@ -63,15 +62,15 @@ support.
 - Git `2.51+`
 - Java `25`
 - Maven `3.9+`
-- Spring Boot `3.5.6`
-- (Optional)Docker Desktop (tested on `4.48.0`)
+- Spring Boot `3.5.11`
+- (Optional)Docker Desktop (tested on `4.50+`)
 - (Optional) Minikube/Helm for Kubernetes
 
 ---
 
 ## 🛠️ Getting Started
 
-Run Authorization server [Auth-Server](https://github.com/deepaksorthiya/spring-boot-3-oauth2-authserver.git).
+Run Authorization server [Auth-Server](https://github.com/deepaksorthiya/spring-boot-oauth2-authserver.git).
 Configure Host file and add auth-server as DNS to avoid localhost cookie issue.
 
 ### 1. Clone the Repository
