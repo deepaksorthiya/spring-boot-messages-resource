@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/docker/pulls/deepaksorthiya/spring-boot-messages-resource" alt="Docker"/>
   </a>
   <a href="https://spring.io/projects/spring-boot">
-    <img src="https://img.shields.io/badge/spring--boot-3.5.11-brightgreen?logo=springboot" alt="Spring Boot"/>
+    <img src="https://img.shields.io/badge/spring--boot-3.5.16-brightgreen?logo=springboot" alt="Spring Boot"/>
   </a>
 </p>
 
@@ -62,7 +62,7 @@ support.
 - Git `2.51+`
 - Java `25`
 - Maven `3.9+`
-- Spring Boot `3.5.11`
+- Spring Boot `3.5.16`
 - (Optional)Docker Desktop (tested on `4.50+`)
 - (Optional) Minikube/Helm for Kubernetes
 
